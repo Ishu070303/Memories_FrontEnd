@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Memories_FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Memories
+> “I thought past memories are everything to us" so lets start creating your own memories through Memories_App, you can update or delete it when ever you want,
+> get a like , comment from your own friends. :fire:.
 
-## Available Scripts
+## Features
+</br>
 
-In the project directory, you can run:
+- [x] Password user login and SignUp using **Google Auth**
+- [x] Welcome landing page
+- [x] posts search with relevent tags and names
+- [x] Easy memories creating form
+- [x] Post Details page 😋
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo version
+</br>
+A demo version is automatically deployed for this repositories:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Deployment for frontend part -
+- Deployment for backend part - 
 
-### `npm test`
+## Technology Stack 
+</br>
+Please get familiar with the components of the project in order to be able to contribute.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### components
+- CSS: Styling web pages, html files
+- Javascript: Primary programing language
+- ReactJS: Javascript library for building User Interfaces
+- nodejs: Used in the backend
+- express: To create the calling API
+- Material-UI: UI library for design system
+- Redux:  React state management store
+- Google React login
 
-### `npm run build`
+#### External Service Dependencies
+- MongoDB Atlas: A cloud database used to store user personal data username, passwords and individuals chats
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requirements
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- node --version >= 6
+- npm --version >= 3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Local Installation for frontend
+</br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Steps
+- `git clone <repository-url>` where `<repository-url>`is the link to the forked repository
+- `cd frontend_ui`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Note : If you want to contribute, first fork the original repository and clone the forked repository into your local machine followed by `cd` into the directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+git clone https://github.com/USERNAME/frontend_ui
+cd frontend_ui
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Local Installation for backend
+</br>
 
-## Learn More
+### Steps
+- `git clone <repository-url>` where `<repository-url>`is the link to the forked repository
+- `cd backend_services`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Note : If you want to contribute, first fork the original repository and clone the forked repository into your local machine followed by `cd` into the directory
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+git clone https://github.com/USERNAME/backend_services
+cd backend_services
+```
 
-### Code Splitting
+#### Config Variables
+Define config variables in config.env.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Create a free mongoDB atlas account at [https://www.mongodb.com](https://www.mongodb.com) and set a new cluster connection url equal to `db_connection_URL`
+- Set `JWT_SECRET = <your_jwt_secret_string>` where `<your_jwt_secret_string>` is long alphanumerical string 
+- Set `JWT_EXPIRE = <jwt_token_life_time>` where `<jwt_token_life_time>` is a string e.g. 10min, 30min
 
-### Analyzing the Bundle Size
+#### Starting server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+cd backend_services
+```
+- Install all the dependencies with `npm install`
+- Start the server with `npm start`
+- Visit your API at [http://localhost:5000](http://localhost:5000.) :tada:
 
-### Making a Progressive Web App
+#### Starting frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+cd frontend_ui
+```
+- Install all the dependencies with `npm install`
+- Start the server with `npm start`
+- Visit your app at [http://localhost:3000](http://localhost:3000.) :tada:
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Feel free to **contribute** :heart_eyes:
+- When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change."# Memories_Frontend" 
